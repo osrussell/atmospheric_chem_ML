@@ -1,0 +1,3 @@
+[submodule "chem150"]
+	path = chem150
+	url = https://github.com/osrussell/chem150.git
