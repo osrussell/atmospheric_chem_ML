@@ -2,7 +2,7 @@
 ## Authors: Olivia Russell and Sarah Covey 
 This repository contains functions to help with data selection for training different ML Models
 
-# Outline
+## Outline
 
 <ul>
   <li>Defines a Python class to give insite about NaNs in a pandas dataframe for air pollutant data applications ('''nan_checker.py''')</li>
