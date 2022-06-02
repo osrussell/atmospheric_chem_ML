@@ -16,12 +16,12 @@ class NaNChecker():
         #     'email': "orussell@g.hmc.edu",
         #     'key': "silverwren87"}
         self.df = pd.DataFrame(data=data)
-    
-    def print_df(self):
+
+    def nan_summary():
         """
-        prints back the input data frame
+        prints out a summary of all the analyses of nans
         """
-        return self.df
+        return None
 
     def tally_nans(self, variable):
         """
@@ -44,6 +44,6 @@ class NaNChecker():
                 tally_df.loc[len(tally_df.index)] = tally # adds tally to the df
                 tally = 0
 
-        # I NOW NEED TO FIND THE BEST PLACES TO PUT THIS 
+        # NEED TO FIGURE OUT WHERE TO DISPLAY THIS RESULT OR HOW TO USE THIS INFORMATION
 
-        return None
+        return tally_df.hist()
