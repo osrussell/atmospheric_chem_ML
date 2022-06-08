@@ -66,12 +66,6 @@ class findSites():
         # returns just the site numbers, 
         # return df[['site_number','open_date', 'close_date', param]]
         return df[['site_number', 'site_name', param]]
-
-    def join(self):
-        '''
-        Processes the array of all the information to return
-        '''
-        return None
     
     def best_sites_state(self, state, byear, eyear=None, other_params=[]):
         """
@@ -89,9 +83,11 @@ class findSites():
         for param in params:
             #find_sites('Ozone', '06', 1980, 2020)
             df = self.find_sites(param, state, byear, eyear)
+            dfs = pd.concat([dfs, df]).fillna(value=False)
 
-        dfs = pd.concat([dfs, df]).fillna(value=False)
         dfs = dfs.groupby(dfs['site_number']).sum()
+        all_params = ['Ozone'] + params
+        dfs = dfs.sort_values(by=all_params, ascending=False)
         # reformats the data frame
 
         return dfs
