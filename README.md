@@ -21,3 +21,8 @@ $ python3 -m pip install -r requirements.txt # Download requirements
 ```
 
 Shoutout Thomas for the environment set-up !
+
+Also, if you're running any included notebooks on your own machine, make sure to change the following code to the path on your own computer to properly use the submodule!
+```
+sys.path.append('/Users/olivia/main/research/atmospheric_chem_ML/chem150')
+```
