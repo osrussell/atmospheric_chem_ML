@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-class NaNChecker():
+class StatChecker():
     """
     Python API to queury from AQS database.
     """
