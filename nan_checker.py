@@ -48,17 +48,18 @@ class NaNChecker():
 
         return tally_df.hist()
 
-    ''' 
-    @param df - the dataframe 
-    @param dataLabel - the name of the column of data to analyze (eg "Ozone")
-    @param timeFrame - the timeframe to graph by (eg "month")
-    @return (graph, nanDictList, numNaNsTotal)
-        graph - the graph generated
-        nanDictList - the list of dictionaries containing the type of NaN as a key and number of NaNs of that type as the value for each timeframe
-        numNaNsTotal - a list of the total number of NaNs in each timeframe
-    '''
-    def graphNaNTypes(df, dataLabel, timeFrame):
 
+    def graphNaNTypes(df, dataLabel, timeFrame):
+        """
+        @param df - the dataframe 
+        @param dataLabel - the name of the column of data to analyze (eg "Ozone")
+        @param timeFrame - the timeframe to graph by (eg "month")
+        @return (graph, nanDictList, numNaNsTotal)
+            graph - the graph generated
+            nanDictList - the list of dictionaries containing the type of NaN as a key and number of NaNs of that type as the value for each timeframe
+            numNaNsTotal - a list of the total number of NaNs in each timeframe
+        """
+        
         if timeFrame == "year":
             sYear = df.iloc[0].name.year
             eYear = df.iloc[-1].name.year
