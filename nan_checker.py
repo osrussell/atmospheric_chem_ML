@@ -1,5 +1,5 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 
 class NaNChecker():
     """
@@ -140,3 +140,4 @@ class NaNChecker():
         plt.legend(messageList)
     
         return (graph, nanDictList, numNaNsTotal)
+        
