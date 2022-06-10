@@ -15,6 +15,8 @@ class NaNChecker():
         # self.params = {
         #     'email': "orussell@g.hmc.edu",
         #     'key': "silverwren87"}
+
+        # dataframe WITH QUALIFIERS
         self.df = pd.DataFrame(data=data)
 
     def nan_summary():
