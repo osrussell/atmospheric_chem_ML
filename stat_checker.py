@@ -110,4 +110,83 @@ class StatChecker():
         plt.legend(messageList)
     
         return (graph, nanDictList, numNaNsTotal)
+
+
+    def extreme_yearly(self, measurement, units, threshold=80) :
+        yrStart = self.df.iloc[0].name.year
+        yrEnd = self.df.iloc[-1].name.year
+
+        extreme_df = self[(df[measurement] > 0)][measurement]
+        fig, ax = plt.subplots(figsize=(20,12))
+        columns = []
+        for yr in range(yrStart, yrEnd) :
+            year_df = extreme_df[extreme_df.index.year == yr]
+            columns.append(year_df)
+
+        ax.boxplot(columns)
+        plt.xticks(list(range(1,yrEnd-yrStart+1)), list(range(yrStart, yrEnd)), rotation=30)
+        ax.set_title('Extreme values for ' + measurement, fontsize=16, weight='bold')
+        ax.set_xlabel('Year', fontsize=14)
+        ax.set_ylabel(measurement + ' ' + units, fontsize=14)
+        plt.axhline(threshold, color='r', linestyle='--')
+
+        return plt
+
+
+    def yearly_avg(self, measurement) :
+        yrStart = self.df.iloc[0].name.year
+        yrEnd = self.df.iloc[-1].name.year
+
+        avg_df = pd.DataFrame(columns=[measurement + "_avg"], index=range(yrStart,yrEnd))
+        avg_df.index.name = 'Year'
+        for yr in range(yrStart, yrEnd) :
+            avg_df[measurement + "_avg"][yr] = df[df.index.year == yr][measurement].mean()
+        avg_df.plot(linestyle='-', marker='o', figsize=(12,6))
+        
+        return plt
+
+    def getMonths(input, m1, m2, m3) :
+        return input.loc[(input.index.month==m1) | (input.index.month==m2) | (input.index.month==m3)]
+
+
+    def seasonal_avg(self, yrStart, yrEnd, measurement, ylim) :
+        spring_df = getMonths(self, 3,4,5)[measurement]
+        spring_df = spring_df.groupby(spring_df.index.year).describe()
+        spring_df['mean_minstd'] = spring_df['mean'] - spring_df['std']
+        spring_df['mean_plusstd'] = spring_df['mean'] + spring_df['std']
+
+        summer_df = getMonths(self, 6,7,8)[measurement]
+        summer_df = summer_df.groupby(summer_df.index.year).describe()
+        summer_df['mean_minstd'] = summer_df['mean'] - summer_df['std']
+        summer_df['mean_plusstd'] = summer_df['mean'] + summer_df['std']
+
+        fall_df = getMonths(self, 9,10,11)[measurement]
+        fall_df = fall_df.groupby(fall_df.index.year).describe()
+        fall_df['mean_minstd'] = fall_df['mean'] - fall_df['std']
+        fall_df['mean_plusstd'] = fall_df['mean'] + fall_df['std']
+
+        winter_df = getMonths(self, 12,1,2)[measurement]
+        winter_df = winter_df.groupby(winter_df.index.year).describe()
+        winter_df['mean_minstd'] = winter_df['mean'] - winter_df['std']
+        winter_df['mean_plusstd'] = winter_df['mean'] + winter_df['std']
+
+        seasonal_df = [spring_df, summer_df, fall_df, winter_df]
+        seasonal_labels = ['Spring', 'Summer', 'Fall', 'Winter']
+
+        fig, axs = plt.subplots(2, 2, figsize=(20,12))
+
+        for i, ax in enumerate(fig.axes) :
+
+            ax.set_title(seasonal_labels[i] + ' Mean Profile for ' + measurement, fontsize=16, weight='bold')
+            ax.plot(seasonal_df[i].index, seasonal_df[i]['mean'], color='g', linewidth=3.0)
+            ax.plot(seasonal_df[i].index, seasonal_df[i]['mean_plusstd'], color='g')
+            ax.plot(seasonal_df[i].index, seasonal_df[i]['mean_minstd'], color='g')
+            ax.fill_between(seasonal_df[i].index, seasonal_df[i]['mean'], seasonal_df[i]['mean_plusstd'], alpha=.5, facecolor='g')
+            ax.fill_between(seasonal_df[i].index, seasonal_df[i]['mean'], seasonal_df[i]['mean_minstd'], alpha=.5, facecolor='g')
+            ax.set_xlabel('Year', fontsize=14)
+            ax.set_ylabel(measurement, fontsize=14)
+            ax.set_xlim(yrStart, yrEnd-1)
+            ax.set_ylim(0, ylim)
+
+        return plt
         
