@@ -1,0 +1,102 @@
+,state_code,state_name,site_number,local_site_name,county_code,total_params,Ozone,Carbon monoxide,Nitrogen dioxide (NO2),Wind Speed,Wind Direction,Relative Humidity ,Outdoor Temperature,Barometric pressure
+0,01,Alabama,1003,Fairfield,073,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,01,Alabama,0014,HUNTSVILLE OLD AIRPORT,089,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,04,Arizona,3002,CENTRAL PHOENIX,013,5.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+1,04,Arizona,1004,NORTH PHOENIX,013,3.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+2,04,Arizona,2001,GLENDALE,013,3.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+3,04,Arizona,3003,SOUTH SCOTTSDALE,013,3.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+4,04,Arizona,1011,22ND & CRAYCROFT,019,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,05,Arkansas,1002,NLR AIRPORT,119,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,06,California,0001,Barstow,071,5.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+1,06,California,1006,Alpine,073,5.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0
+2,06,California,0004,Vallejo,095,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+3,06,California,1001,Los Gatos,085,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+4,06,California,1004,Upland,071,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+5,06,California,1103,Los Angeles-North Main Street,037,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+6,06,California,3001,El Rio-Rio Mesa School #2,111,3.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+7,06,California,5001,La Habra,059,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+8,06,California,8001,Rubidoux,065,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+9,06,California,0002,Azusa,037,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+10,06,California,1201,Reseda,037,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+11,06,California,1701,Pomona,037,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+12,06,California,0005,Crestline,071,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+13,06,California,2001,Hayward,001,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+14,06,California,6001,Perris,065,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,08,Colorado,0002,HIGHLAND RESERVOIR,005,6.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,09,Connecticut,1123,Western Conn State Univ,001,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,12,Florida,0018,Azalea Park,103,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,12,Florida,2002,WINTER PARK,095,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,12,Florida,0004,St. Petersburg College,103,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,12,Florida,0077,Sheffield,031,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,12,Florida,1035,Davis Island,057,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,12,Florida,5002,John Chesnut Sr. Park - East Lake,103,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,13,Georgia,0001,Conyers,247,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,13,Georgia,0002,South DeKalb,089,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,17,Illinois,0010,IEPA-RAPS TRAILER,163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,17,Illinois,0024,FIRESTATION,143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,17,Illinois,1001,PEORIA HEIGHTS HS,143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,17,Illinois,1003,TAFT HS,031,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,17,Illinois,2001,MAPLE ELEMENTARY SCHOOL,201,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,17,Illinois,3007,WATER PLANT,119,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,17,Illinois,7002,WATER PLANT,031,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,18,Indiana,0050,Indpls.- Ft. Harrison,097,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,18,Indiana,2008,HAMMOND CAAP- Hammond- 141st St.,089,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,20,Kansas,0010,WICHITA HD,173,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,21,Kentucky,0005,OWENSBORO PRIMARY,059,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,21,Kentucky,0012,LEXINGTON PRIMARY,067,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,22,Louisiana,0002,Garyville,095,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,22,Louisiana,0003,LSU,033,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,24,Maryland,3001,Essex,005,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,24,Maryland,1007,Padonia,005,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,25,Massachusetts,0015,WORCESTER AIRPORT,027,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,26,Michigan,0019,East 7 Mile,163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,26,Michigan,1003,WARREN - FIRE STATION 29900 HOOVER AT COMMON,099,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,27,Minnesota,0005,Boundary Waters,075,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,27,Minnesota,1001,Cedar Creek,003,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,27,Minnesota,1002,Anoka County Airport,003,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,28,Mississippi,0002,Hernando,033,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,29,Missouri,0003,Watkins Mill State Park,047,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,29,Missouri,1002,West Alton,183,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,32,Nevada,1005,Sparks,031,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,34,New Jersey,1001,Ancora State Hospital,007,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,34,New Jersey,3001,Chester,027,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,35,New Mexico,0008,6O La Union,013,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,36,New York,0002,BABYLON,103,3.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+1,36,New York,2004,WHITE PLAINS,119,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,36,New York,3001,WILLIAMSON,117,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,37,North Carolina,0001,Butner,077,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,37,North Carolina,0002,Castle Hayne,129,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,39,Ohio,0001,Springfield Well Fd,023,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,39,Ohio,0006,Sycamore,061,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,39,Ohio,0010,Colerain,061,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,39,Ohio,0034,District 6,035,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,39,Ohio,0081,Maple Canyon,049,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,39,Ohio,1001,Preble NCore,135,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,40,Oklahoma,0174,TULSA SOUTH,143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,40,Oklahoma,1037,OKC NORTH,109,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,41,Oregon,0004,CARUS TRAILER/SPANGLER RD,005,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,42,Pennsylvania,0011,None,021,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,42,Pennsylvania,2006,A420692006LAT/LON POINT IS AT CORNER OF TRAILER,069,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+2,42,Pennsylvania,0002,A420450002LAT/LON POINT IS OF CORNER OF TRAILER,045,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+3,42,Pennsylvania,0005,None,125,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+4,42,Pennsylvania,0008,Lawrenceville,003,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+5,42,Pennsylvania,0014,None,007,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+6,42,Pennsylvania,0007,A420710007LAT/LON POINT AT CORNER OF TRAILER,071,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,42,Pennsylvania,0012,A420170012LAT/LONG POINT IS OF SAMPLING INLET,017,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8,42,Pennsylvania,0013,A420910013LAT/LON POINT IS OF CORNER OF TRAILER,091,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,42,Pennsylvania,0015,None,073,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+10,42,Pennsylvania,0024,North East Airport (NEA),101,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+11,42,Pennsylvania,0401,A420430401LAT/LON POINT IS AT CORNER OF TRAILER,043,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+12,42,Pennsylvania,0801,None,013,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,44,Rhode Island,0002,AJ,003,3.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+0,45,South Carolina,1001,SANDHILL EXPERIMENTAL STATION,079,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,47,Tennessee,0007,Hendersonville Ozone Site at Old Hickory Dam,165,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,47,Tennessee,0011,East Health,037,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+2,47,Tennessee,0021,Frayser Ozone Monitor,157,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,47,Tennessee,0026,Percy Priest Dam,037,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,47,Tennessee,1011,Soddy-Daisy High School,065,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,48,Texas,0024,Houston Aldine,201,5.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0
+1,48,Texas,1002,Fort Worth Northwest,439,5.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0
+2,48,Texas,0014,Austin North Hills Drive,453,4.0,1.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0
+0,51,Virginia,0020,Aurora Hills Visitors Center,013,3.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,53,Washington,0010,ISSAQUAH -  LAKE SAMMAMISH (Wiithin Lake Sammamish State Park),033,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

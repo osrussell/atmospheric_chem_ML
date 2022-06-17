@@ -1,0 +1,31 @@
+,state_code,state_name,site_number,local_site_name,county_code,total_params,Ozone,Carbon monoxide,PM2.5 - Local Conditions,Wind Speed - Resultant,Solar radiation,Relative Humidity ,Wind Speed - Scalar,Outdoor Temperature,Wind Direction - Resultant,Nitrogen dioxide (NO2),Wind Speed,Wind Direction,Barometric pressure,Ultraviolet radiation,Wind Direction - Scalar
+0,01,Alabama,1002,"MOMS, ADEM",101,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,04,Arizona,0019,WEST PHOENIX,013,6.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,06,California,5001,Clovis-Villa,019,10.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+1,06,California,2009,Tranquillity,019,6.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+0,15,Hawaii,1004,Sand Island,003,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,16,Idaho,0010,Meridian - St. Luke's,001,4.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,18,Indiana,0022,Gary-IITRI/ 1219.5 meters east of Tennessee St.- old ammuntion bunker,089,10.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0
+1,18,Indiana,0078,Indpls- Washington Park/  in parking lot next to police station,097,7.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+2,18,Indiana,0015,South Bend-Shields Dr.,141,6.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+3,18,Indiana,0018,TERRE HAUTE CAAP/ McLean High School,167,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,18,Indiana,0021,Evansville- Buena Vista,163,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,21,Kentucky,3002,NORTHERN KENTUCKY UNIVERSITY (NKU),037,3.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,24,Maryland,3001,Rockville,031,10.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0
+1,24,Maryland,0030,HU-Beltsville,033,9.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+2,24,Maryland,0003,Fair Hill Natural Resource Management Area,015,6.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+0,33,New Hampshire,0007,WATER STREET,005,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,33,New Hampshire,0010,LEBANON AIRPORT ROAD,009,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,33,New Hampshire,0014,PORTSMOUTH - PEIRCE ISLAND,015,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,37,North Carolina,0014,Millbrook School,183,8.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+0,38,North Dakota,0003,BISMARCK RESIDENTIAL,015,7.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+0,42,Pennsylvania,0011,Reading Airport,011,4.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,42,Pennsylvania,0005,None,125,3.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+2,42,Pennsylvania,0014,None,007,3.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+3,42,Pennsylvania,0025,LAT/LON POINT IS CENTER OF TRAILER,095,3.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+4,42,Pennsylvania,0007,A420710007LAT/LON POINT AT CORNER OF TRAILER,071,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,44,Rhode Island,0002,AJ,003,8.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+0,46,South Dakota,0132,Wind Cave NP - Visitor Center,033,7.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+1,46,South Dakota,0001,SOUTH OF BADLANDS NP HEADQUARTERS,071,6.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,53,Washington,0080,SEATTLE - BEACON HILL,033,8.0,1.0,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,56,Wyoming,0101,Pinedale Gaseous,035,7.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0
