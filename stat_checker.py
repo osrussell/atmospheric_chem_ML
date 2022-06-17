@@ -145,6 +145,21 @@ class StatChecker():
         
         return plt
 
+
+    def yearly_avg_daytime(self, measurement) :
+        daytime_df = self.df[np.logical_and(self.df.index.hour >= 10, self.df.index.hour < 16)][measurement]
+        yrStart = daytime_df.index[0].year
+        yrEnd = daytime_df.index[-1].year
+
+        avg_df = pd.DataFrame(columns=[measurement + "_avg"], index=range(yrStart, yrEnd))
+        avg_df.index.name = 'Year'
+
+        for yr in range(yrStart, yrEnd) :
+            avg_df[measurement + "_avg"][yr] = daytime_df[daytime_df.index.year == yr].mean()
+
+
+        return avg_df
+
     def getMonths(input, m1, m2, m3) :
         return input.loc[(input.index.month==m1) | (input.index.month==m2) | (input.index.month==m3)]
 
