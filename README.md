@@ -1,5 +1,5 @@
 # Atmospheric Chemistry ML Model Building Helper
-## Authors: Olivia Russell and Sarah Covey 
+## Authors: Olivia Russell, Sarah Covey, and Nic Tekieli 
 This repository contains functions to help with data selection for training different ML Models
 
 ## Outline
