@@ -24,8 +24,8 @@ class StatChecker():
         @param df - the dataframe 
         @param dataLabel - the name of the column of data to analyze (eg "Ozone")
         @param timeFrame - the timeframe to graph by (eg "month")
-        @return (graph, nanDictList, numNaNsTotal)
-            graph - the graph generated
+        @return (graph, ax, nanDictList, numNaNsTotal)
+            graph, ax - the graph generated
             nanDictList - the list of dictionaries containing the type of NaN as a key and number of NaNs of that type as the value for each timeframe
             numNaNsTotal - a list of the total number of NaNs in each timeframe
         """
@@ -100,6 +100,7 @@ class StatChecker():
             valueList[messageList.index(message)][xIndex] += 1
 
         graph = plt.figure(figsize = [15, 6])
+        ax = plt.axes()
 
         plt.bar(xAxis, valueList[0])
         bottoms = valueList[0]
@@ -109,7 +110,7 @@ class StatChecker():
 
         plt.legend(messageList)
     
-        return (graph, nanDictList, numNaNsTotal)
+        return (graph, ax, nanDictList, numNaNsTotal)
 
 
     def extreme_yearly(self, measurement, units, threshold=80) :
