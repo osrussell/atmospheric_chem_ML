@@ -158,9 +158,9 @@ class StatChecker():
 
         for yr in range(yrStart, yrEnd) :
             avg_df[measurement + "_avg"][yr] = daytime_df[daytime_df.index.year == yr].mean()
+        avg_df.plot(linestyle='-', marker='o', figsize=(12,6))
 
-
-        return avg_df
+        return plt
 
     def getMonths(input, m1, m2, m3) :
         return input.loc[(input.index.month==m1) | (input.index.month==m2) | (input.index.month==m3)]
