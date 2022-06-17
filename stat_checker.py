@@ -24,8 +24,8 @@ class StatChecker():
         @param df - the dataframe 
         @param dataLabel - the name of the column of data to analyze (eg "Ozone")
         @param timeFrame - the timeframe to graph by (eg "month")
-        @return (graph, nanDictList, numNaNsTotal)
-            graph - the graph generated
+        @return (graph, ax, nanDictList, numNaNsTotal)
+            graph, ax - the graph generated
             nanDictList - the list of dictionaries containing the type of NaN as a key and number of NaNs of that type as the value for each timeframe
             numNaNsTotal - a list of the total number of NaNs in each timeframe
         """
@@ -100,6 +100,7 @@ class StatChecker():
             valueList[messageList.index(message)][xIndex] += 1
 
         graph = plt.figure(figsize = [15, 6])
+        ax = plt.axes()
 
         plt.bar(xAxis, valueList[0])
         bottoms = valueList[0]
@@ -109,14 +110,14 @@ class StatChecker():
 
         plt.legend(messageList)
     
-        return (graph, nanDictList, numNaNsTotal)
+        return (graph, ax, nanDictList, numNaNsTotal)
 
 
     def extreme_yearly(self, measurement, units, threshold=80) :
-        yrStart = self.df.iloc[0].name.year
-        yrEnd = self.df.iloc[-1].name.year
+        yrStart = self.df.index[0].year
+        yrEnd = self.df.index[-1].year
 
-        extreme_df = self[(df[measurement] > 0)][measurement]
+        extreme_df = self.df[(self.df[measurement] > 0)][measurement]
         fig, ax = plt.subplots(figsize=(20,12))
         columns = []
         for yr in range(yrStart, yrEnd) :
@@ -134,38 +135,53 @@ class StatChecker():
 
 
     def yearly_avg(self, measurement) :
-        yrStart = self.df.iloc[0].name.year
-        yrEnd = self.df.iloc[-1].name.year
+        yrStart = self.df.index[0].year
+        yrEnd = self.df.index[-1].year
 
         avg_df = pd.DataFrame(columns=[measurement + "_avg"], index=range(yrStart,yrEnd))
         avg_df.index.name = 'Year'
         for yr in range(yrStart, yrEnd) :
-            avg_df[measurement + "_avg"][yr] = df[df.index.year == yr][measurement].mean()
+            avg_df[measurement + "_avg"][yr] = self.df[self.df.index.year == yr][measurement].mean()
         avg_df.plot(linestyle='-', marker='o', figsize=(12,6))
         
         return plt
+
+
+    def yearly_avg_daytime(self, measurement) :
+        daytime_df = self.df[np.logical_and(self.df.index.hour >= 10, self.df.index.hour < 16)][measurement]
+        yrStart = daytime_df.index[0].year
+        yrEnd = daytime_df.index[-1].year
+
+        avg_df = pd.DataFrame(columns=[measurement + "_avg"], index=range(yrStart, yrEnd))
+        avg_df.index.name = 'Year'
+
+        for yr in range(yrStart, yrEnd) :
+            avg_df[measurement + "_avg"][yr] = daytime_df[daytime_df.index.year == yr].mean()
+
+
+        return avg_df
 
     def getMonths(input, m1, m2, m3) :
         return input.loc[(input.index.month==m1) | (input.index.month==m2) | (input.index.month==m3)]
 
 
     def seasonal_avg(self, yrStart, yrEnd, measurement, ylim) :
-        spring_df = getMonths(self, 3,4,5)[measurement]
+        spring_df = getMonths(self.df, 3,4,5)[measurement]
         spring_df = spring_df.groupby(spring_df.index.year).describe()
         spring_df['mean_minstd'] = spring_df['mean'] - spring_df['std']
         spring_df['mean_plusstd'] = spring_df['mean'] + spring_df['std']
 
-        summer_df = getMonths(self, 6,7,8)[measurement]
+        summer_df = getMonths(self.df, 6,7,8)[measurement]
         summer_df = summer_df.groupby(summer_df.index.year).describe()
         summer_df['mean_minstd'] = summer_df['mean'] - summer_df['std']
         summer_df['mean_plusstd'] = summer_df['mean'] + summer_df['std']
 
-        fall_df = getMonths(self, 9,10,11)[measurement]
+        fall_df = getMonths(self.df, 9,10,11)[measurement]
         fall_df = fall_df.groupby(fall_df.index.year).describe()
         fall_df['mean_minstd'] = fall_df['mean'] - fall_df['std']
         fall_df['mean_plusstd'] = fall_df['mean'] + fall_df['std']
 
-        winter_df = getMonths(self, 12,1,2)[measurement]
+        winter_df = getMonths(self.df, 12,1,2)[measurement]
         winter_df = winter_df.groupby(winter_df.index.year).describe()
         winter_df['mean_minstd'] = winter_df['mean'] - winter_df['std']
         winter_df['mean_plusstd'] = winter_df['mean'] + winter_df['std']
