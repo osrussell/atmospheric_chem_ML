@@ -4,28 +4,25 @@ import numpy as np
 
 class StatChecker():
     """
-    Python API to queury from AQS database.
+    Collection of functions to examine different stats about data pulled from the AQS API
     """
-    # hey 
 
     def __init__(self, data):
         """
         initializes the object with the dataframe you want checked
         """
-        # params for checking for Nans if needed
-        # self.params = {
-        #     'email': "orussell@g.hmc.edu",
-        #     'key': "silverwren87"}
-
-        # dataframe WITH QUALIFIERS
         self.df = pd.DataFrame(data=data)
 
     def graphNaNTypes(self, dataLabel, timeFrame):
         """
-        @param df - the dataframe 
-        @param dataLabel - the name of the column of data to analyze (eg "Ozone")
-        @param timeFrame - the timeframe to graph by (eg "month")
-        @return (graph, ax, nanDictList, numNaNsTotal)
+        Finds sites for a certain parameter within the range of byear to eyear
+
+        Parameters:
+            df - the dataframe 
+            dataLabel - the name of the column of data to analyze (eg "Ozone")
+            timeFrame - the timeframe to graph by (eg "month")
+
+        Returns: (graph, ax, nanDictList, numNaNsTotal)
             graph, ax - the graph generated
             nanDictList - the list of dictionaries containing the type of NaN as a key and number of NaNs of that type as the value for each timeframe
             numNaNsTotal - a list of the total number of NaNs in each timeframe
@@ -167,22 +164,22 @@ class StatChecker():
 
 
     def seasonal_avg(self, yrStart, yrEnd, measurement, ylim) :
-        spring_df = getMonths(self.df, 3,4,5)[measurement]
+        spring_df = self.getMonths(self.df, 3,4,5)[measurement]
         spring_df = spring_df.groupby(spring_df.index.year).describe()
         spring_df['mean_minstd'] = spring_df['mean'] - spring_df['std']
         spring_df['mean_plusstd'] = spring_df['mean'] + spring_df['std']
 
-        summer_df = getMonths(self.df, 6,7,8)[measurement]
+        summer_df = self.getMonths(self.df, 6,7,8)[measurement]
         summer_df = summer_df.groupby(summer_df.index.year).describe()
         summer_df['mean_minstd'] = summer_df['mean'] - summer_df['std']
         summer_df['mean_plusstd'] = summer_df['mean'] + summer_df['std']
 
-        fall_df = getMonths(self.df, 9,10,11)[measurement]
+        fall_df = self.getMonths(self.df, 9,10,11)[measurement]
         fall_df = fall_df.groupby(fall_df.index.year).describe()
         fall_df['mean_minstd'] = fall_df['mean'] - fall_df['std']
         fall_df['mean_plusstd'] = fall_df['mean'] + fall_df['std']
 
-        winter_df = getMonths(self.df, 12,1,2)[measurement]
+        winter_df = self.getMonths(self.df, 12,1,2)[measurement]
         winter_df = winter_df.groupby(winter_df.index.year).describe()
         winter_df['mean_minstd'] = winter_df['mean'] - winter_df['std']
         winter_df['mean_plusstd'] = winter_df['mean'] + winter_df['std']
@@ -206,4 +203,31 @@ class StatChecker():
             ax.set_ylim(0, ylim)
 
         return plt
+
+    def countAdjacentNaNs(df, variable):
+        """
+        Creates a dataframe of # of NaNs in a row
+
+        Parameters:
+            df - the dataframe 
+
+        Returns: 
+            tally_df - the dataframe organized by data of the first NaN, and has the number of NaNs in a row
+        """
+        
+        # creates a dataframe of just that variable
+        var_df = df[variable]
+        var_df_nans = var_df.isnull()
+        # loop through all variables, if NaN
+        tally_df = pd.DataFrame({'NaNs':[], 'Start Date':[]})
+        tally = 0 # counts NaNs in a row
+        for i in range(len(var_df_nans)):
+            if var_df_nans[i] == True: # so if val is NaN
+                tally += 1
+            if (var_df_nans[i] == False) and (tally != 0): # if we switch back to False and also the tally has stuff in it
+                tally_df_index = len(tally_df.index)
+                tally_df.loc[tally_df_index, 'NaNs'] = tally # adds tally to the df
+                tally_df.loc[tally_df_index, 'Start Date'] = df.iloc[i-tally].name # adds start date, calculates by subtracting num days in tally
+                tally = 0
+        return tally_df
         
