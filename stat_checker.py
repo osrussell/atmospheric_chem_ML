@@ -112,6 +112,19 @@ class StatChecker():
 
 
     def extreme_yearly(self, measurement, units, threshold=80) :
+        """
+        Box and whisker plot of point for each year
+
+        Parameters:
+            df - dataframe
+            measurement - which measurement to extract from dataframe
+            units - units of measurement for graph label
+            threshold - horizontal line to show all values over a specific
+            threshold, default is set to 80 for ozone
+
+        Returns:
+            plt - plot of data in box and whisker format with threshold marker
+        """
         yrStart = self.df.index[0].year
         yrEnd = self.df.index[-1].year
 
@@ -133,6 +146,16 @@ class StatChecker():
 
 
     def yearly_avg(self, measurement) :
+        """
+        Graph representing each year's average measurement on a time series plot
+
+        Parameters:
+            df - dataframe
+            measurement - measurement to be extracted from dataframe
+
+        Returns:
+            plt - plot of yearly average over a timeseries
+        """
         yrStart = self.df.index[0].year
         yrEnd = self.df.index[-1].year
 
@@ -145,8 +168,20 @@ class StatChecker():
         return plt
 
 
-    def yearly_avg_daytime(self, measurement) :
-        daytime_df = self.df[np.logical_and(self.df.index.hour >= 10, self.df.index.hour < 16)][measurement]
+    def yearly_avg_daytime(self, measurement, startTime, endTime) :
+        """
+        Graph representing each year's average for a certain time period of the day
+
+        Parameters:
+            df - dataframe
+            measurement - measurement to be extracted from dataframe
+            startTime - time of day to start for average (includes this hour)
+            endTime - time of day to end for average (not including this hour)
+
+        Returns:
+            plt - plot of yearly average for certain time frame over a timeseries
+        """
+        daytime_df = self.df[np.logical_and(self.df.index.hour >= startTime, self.df.index.hour < endTime)][measurement]
         yrStart = daytime_df.index[0].year
         yrEnd = daytime_df.index[-1].year
 
@@ -160,10 +195,31 @@ class StatChecker():
         return plt
 
     def getMonths(input, m1, m2, m3) :
+        """
+        Helper func.
+
+        Parameters:
+            input - dataframe
+            m1, m2, m3 - which three months to extract monthly data from
+
+        Returns: 
+            New dataframe only containing data from the given months
+        """
         return input.loc[(input.index.month==m1) | (input.index.month==m2) | (input.index.month==m3)]
 
 
-    def seasonal_avg(self, yrStart, yrEnd, measurement, ylim) :
+    def seasonal_avg(self, measurement) :
+        """
+        Graphs representing the seasonal averages for a measurement
+
+        Parameters:
+            df - dataframe
+            measurement - measurement to be extracted from dataframe
+            ylim - 
+        """
+        yrStart = self.df.index[0].year
+        yrEnd = self.df.index[-1].year
+
         spring_df = self.getMonths(self.df, 3,4,5)[measurement]
         spring_df = spring_df.groupby(spring_df.index.year).describe()
         spring_df['mean_minstd'] = spring_df['mean'] - spring_df['std']
@@ -189,6 +245,11 @@ class StatChecker():
 
         fig, axs = plt.subplots(2, 2, figsize=(20,12))
 
+        ylim = 0
+        for i in seasonal_df :
+            if i['mean_plusstd'].max() > ylim :
+                ylim = i['mean_plusstd'].max()
+
         for i, ax in enumerate(fig.axes) :
 
             ax.set_title(seasonal_labels[i] + ' Mean Profile for ' + measurement, fontsize=16, weight='bold')
@@ -200,7 +261,7 @@ class StatChecker():
             ax.set_xlabel('Year', fontsize=14)
             ax.set_ylabel(measurement, fontsize=14)
             ax.set_xlim(yrStart, yrEnd-1)
-            ax.set_ylim(0, ylim)
+            ax.set_ylim(0, ylim+10)
 
         return plt
 
