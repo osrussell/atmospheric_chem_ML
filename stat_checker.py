@@ -220,22 +220,22 @@ class StatChecker():
         yrStart = self.df.index[0].year
         yrEnd = self.df.index[-1].year
 
-        spring_df = self.getMonths(self.df, 3,4,5)[measurement]
+        spring_df = self.getMonths(3,4,5)[measurement]
         spring_df = spring_df.groupby(spring_df.index.year).describe()
         spring_df['mean_minstd'] = spring_df['mean'] - spring_df['std']
         spring_df['mean_plusstd'] = spring_df['mean'] + spring_df['std']
 
-        summer_df = self.getMonths(self.df, 6,7,8)[measurement]
+        summer_df = self.getMonths(6,7,8)[measurement]
         summer_df = summer_df.groupby(summer_df.index.year).describe()
         summer_df['mean_minstd'] = summer_df['mean'] - summer_df['std']
         summer_df['mean_plusstd'] = summer_df['mean'] + summer_df['std']
 
-        fall_df = self.getMonths(self.df, 9,10,11)[measurement]
+        fall_df = self.getMonths(9,10,11)[measurement]
         fall_df = fall_df.groupby(fall_df.index.year).describe()
         fall_df['mean_minstd'] = fall_df['mean'] - fall_df['std']
         fall_df['mean_plusstd'] = fall_df['mean'] + fall_df['std']
 
-        winter_df = self.getMonths(self.df, 12,1,2)[measurement]
+        winter_df = self.getMonths(12,1,2)[measurement]
         winter_df = winter_df.groupby(winter_df.index.year).describe()
         winter_df['mean_minstd'] = winter_df['mean'] - winter_df['std']
         winter_df['mean_plusstd'] = winter_df['mean'] + winter_df['std']
