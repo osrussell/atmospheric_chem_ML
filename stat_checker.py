@@ -194,7 +194,7 @@ class StatChecker():
 
         return plt
 
-    def getMonths(m1, m2, m3) :
+    def getMonths(input, m1, m2, m3) :
         """
         Helper func.
 
@@ -205,7 +205,7 @@ class StatChecker():
         Returns: 
             New dataframe only containing data from the given months
         """
-        return self.df.loc[(self.df.index.month==m1) | (self.df.index.month==m2) | (self.df.index.month==m3)]
+        return input.df.loc[(input.df.index.month==m1) | (input.df.index.month==m2) | (input.df.index.month==m3)]
 
 
     def seasonal_avg(self, measurement) :
@@ -291,4 +291,3 @@ class StatChecker():
                 tally_df.loc[tally_df_index, 'Start Date'] = df.iloc[i-tally].name # adds start date, calculates by subtracting num days in tally
                 tally = 0
         return tally_df
-        
