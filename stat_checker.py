@@ -194,18 +194,18 @@ class StatChecker():
 
         return plt
 
-    def getMonths(input, m1, m2, m3) :
+    def getMonths(m1, m2, m3) :
         """
         Helper func.
 
         Parameters:
-            input - dataframe
+            self - dataframe
             m1, m2, m3 - which three months to extract monthly data from
 
         Returns: 
             New dataframe only containing data from the given months
         """
-        return input.loc[(input.index.month==m1) | (input.index.month==m2) | (input.index.month==m3)]
+        return self.df.loc[(self.df.index.month==m1) | (self.df.index.month==m2) | (self.df.index.month==m3)]
 
 
     def seasonal_avg(self, measurement) :
