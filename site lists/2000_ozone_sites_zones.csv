@@ -1,0 +1,90 @@
+,climate_zone,state_code,state_name,site_number,local_site_name,county_code,total_params,Ozone,Carbon monoxide,PM2.5 - Local Conditions,Wind Direction,Solar radiation,Relative Humidity ,Outdoor Temperature,Wind Speed,Nitrogen dioxide (NO2),Barometric pressure,Ultraviolet radiation
+0,N/A,02,Alaska,0003,Denali NP & PRES - Headquarters,068,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,Southwest,04,Arizona,9997,JLG SUPERSITE,013,7,1,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+1,Southwest,04,Arizona,1011,22ND & CRAYCROFT,019,6,1,0.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+2,Southwest,04,Arizona,8001,Grand Canyon NP - The Abyss,005,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+3,Southwest,04,Arizona,3002,CENTRAL PHOENIX,013,6,1,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0
+0,West,06,California,0004,Madera-Pump Yard,039,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+1,West,06,California,0006,Sacramento-Del Paso Manor,067,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+2,West,06,California,2002,Simi Valley-Cochran Street,111,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+3,West,06,California,5001,Clovis-Villa,019,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+4,West,06,California,1004,Ojai - East Ojai Ave,111,9,1,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+5,West,06,California,0011,Elk Grove-Bruceville,067,9,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+6,West,06,California,1103,Los Angeles-North Main Street,037,9,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+7,West,06,California,0002,Azusa,037,8,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+8,West,06,California,1201,Reseda,037,8,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+9,West,06,California,2005,Pasadena,037,8,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+10,West,06,California,9004,San Bernardino,071,8,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+11,West,06,California,0008,Maricopa,029,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0
+12,West,06,California,0007,Livermore,001,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+13,West,06,California,6001,Shafter,029,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+14,West,06,California,8001,Rubidoux,065,8,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+15,West,06,California,4001,Parlier,019,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+16,West,06,California,3001,El Rio-Rio Mesa School #2,111,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+17,West,06,California,1001,Los Gatos,085,7,1,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+18,West,06,California,1234,Trona - Athol/Telescope #2,071,7,1,0.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0
+19,West,06,California,0001,Barstow,071,7,1,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+20,West,06,California,0003,Yosemite NP - Turtleback Dome,043,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+21,West,06,California,0005,Paso Robles,079,7,1,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,0.0
+22,West,06,California,0012,Folsom-Natoma St.,067,7,1,0.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0
+23,West,06,California,1002,Bethel Island,013,6,1,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+24,West,06,California,1025,Los Flores Canyon #1,083,6,1,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+25,West,06,California,9002,Joshua Tree NP - Black Rock,071,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+26,West,06,California,3003,Lassen Volcanic NP - Manzanita Lake Fire Station,089,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+27,West,06,California,2004,Lompoc H Street,083,6,1,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+28,West,06,California,1006,Alpine,073,6,1,0.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,Southwest,08,Colorado,0002,HIGHLAND RESERVOIR,005,7,1,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+1,Southwest,08,Colorado,0007,Rocky Mountain NP - Long's Peak,069,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+2,Southwest,08,Colorado,0101,Mesa Verde NP - Resource Management Area,083,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+3,Southwest,08,Colorado,3001,Welby,001,6,1,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+0,Southeast,11,District Of Columbia,0043,MCMILLAN  NCore-PAMS,001,9,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+0,Southeast,13,Georgia,0001,Conyers,247,6,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0
+0,Ohio Valley,17,Illinois,4201,NORTHBROOK WATER PLANT,031,9,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+0,Ohio Valley,18,Indiana,0022,Gary-IITRI/ 1219.5 meters east of Tennessee St.- old ammuntion bunker,089,7,1,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,Ohio Valley,21,Kentucky,0501,Mammoth Cave NP - Houchin Meadow,061,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,South,22,Louisiana,0009,Vinton,019,11,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+0,Northeast,23,Maine,2003,CETL - Cape Elizabeth Two Lights (State Park),005,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+1,Northeast,23,Maine,0103,MCFARLAND HILL Air Pollutant Research Site,009,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,Northeast,24,Maryland,3001,Rockville,031,8,1,1.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0
+0,Northeast,25,Massachusetts,0002,TRURO NATIONAL SEASHORE,001,9,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+1,Northeast,25,Massachusetts,0008,WESTOVER AFB,013,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+2,Northeast,25,Massachusetts,0042,DUDLEY SQUARE ROXBURY,025,8,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+3,Northeast,25,Massachusetts,4002,QUABBIN RES,015,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+4,Northeast,25,Massachusetts,2006,LYNN WATER TREATMENT PLANT,009,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,Upper Midwest,26,Michigan,0020,GR-MONROE,081,8,1,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0
+1,Upper Midwest,26,Michigan,0001,Allen Park,163,7,1,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0
+2,Upper Midwest,26,Michigan,0003,FRANKFORT,019,7,1,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0
+3,Upper Midwest,26,Michigan,0009,New Haven,099,7,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+4,Upper Midwest,26,Michigan,0021,WHALEY PK 3610 IOWA (FLINT),049,6,1,0.0,1.0,1.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0
+0,Upper Midwest,27,Minnesota,0034,Voyageurs NP - Sullivan Bay,137,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,Ohio Valley,29,Missouri,1002,West Alton,183,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,West,32,Nevada,0101,Great Basin NP - Maintenance Yard,033,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,Northeast,34,New Jersey,0005,Rider University,021,6,1,0.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,Southwest,35,New Mexico,0021,6ZM Desert View,013,6,1,0.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0
+1,Southwest,35,New Mexico,0022,6ZN Santa Teresa,013,6,1,0.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0
+2,Southwest,35,New Mexico,0023,DEL NORTE HIGH SCHOOL,001,6,1,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0
+0,Northeast,36,New York,0005,MT NINHAM,079,9,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0
+1,Northeast,36,New York,1015,EAST SYRACUSE,067,7,1,0.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0
+2,Northeast,36,New York,0002,BABYLON,103,6,1,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+3,Northeast,36,New York,0006,DUNKIRK,013,6,1,0.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,Southeast,37,North Carolina,0014,Millbrook School,183,7,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,Northern Rockies and Plains,38,North Dakota,0002,PAINTED CANYON,007,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+1,Northern Rockies and Plains,38,North Dakota,0004,BEULAH NORTH,057,6,1,0.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0
+0,Northwest,41,Oregon,0004,CARUS TRAILER/SPANGLER RD,005,6,1,0.0,1.0,1.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0
+0,Northeast,44,Rhode Island,1010, FRANCIS SCHOOL East Providence,007,9,1,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0
+1,Northeast,44,Rhode Island,0002,AJ,003,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,Ohio Valley,47,Tennessee,0101,Great Smoky Mountains NP - Look Rock,009,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+1,Ohio Valley,47,Tennessee,0102,Great Smoky Mountains NP - Cade's Cove,009,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+0,South,48,Texas,1035,Clinton,201,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+1,South,48,Texas,0044,El Paso Chamizal,141,8,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+2,South,48,Texas,0037,El Paso UTEP,141,8,1,0.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0
+3,South,48,Texas,0029,Northwest Harris County,201,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+4,South,48,Texas,0024,Houston Aldine,201,7,1,0.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+5,South,48,Texas,0055,Ascarate Park SE,141,7,1,0.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+6,South,48,Texas,0101,Big Bend NP - K-Bar Ranch Road,043,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+7,South,48,Texas,0069,Dallas Hinton,113,6,1,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0
+0,Southwest,49,Utah,0101,Canyonlands NP - Island in the Sky,037,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+1,Southwest,49,Utah,3006,Hawthorne,035,6,1,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0
+0,Southeast,51,Virginia,0003,Shenandoah NP - Big Meadows,113,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0
+0,Northwest,53,Washington,0080,SEATTLE - BEACON HILL,033,6,1,0.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+0,Northern Rockies and Plains,56,Wyoming,1011,Yellowstone NP - Water Tank,039,6,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0

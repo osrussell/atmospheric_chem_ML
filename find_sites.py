@@ -226,9 +226,17 @@ class findSites():
         dfs = pd.DataFrame()
         for index, row in states.iterrows():
             df =  self.best_sites_state(str(row['state_code']), byear, eyear, mandatory_params, other_params)
-            df.insert(0, 'state_name', row['state_name'])
-            df.insert(0, 'state_code', row['state_code'])
-            dfs = pd.concat([dfs, df], axis=0)
+
+            if not df.empty:
+                # weeds out anything with less than 6 features 
+                df = df[df['total_params'] >= 6]
+
+                # adds state identifying information
+                df.insert(0, 'state_name', row['state_name'])
+                df.insert(0, 'state_code', row['state_code'])
+                df.insert(0, 'climate_zone', row['climate_zone'])
+
+                dfs = pd.concat([dfs, df], axis=0)
 
             print(f"Finished state {row['state_name']}")
 
@@ -251,6 +259,80 @@ class findSites():
 
         df = df.rename({'code': 'state_code'}, axis=1)
         df = df.rename({'value_represented': 'state_name'}, axis=1)
-        df = df.drop([55])
+        # drops all non-states
+        df = df.drop(df.index[[51,52,53,54,55]])
+
+        # adds climate zone
+        for index, row in df.iterrows():
+            df.at[index,'climate_zone'] = CLIMATE_ZONES[row['state_name']]
 
         return df
+
+    # def search_usa(self, year):
+    #     """
+    #     Returns a dataframe that searches the U.S.A. for good sites
+
+
+    #     """
+    #     # gets the states 
+    #     r = requests.get(url='https://aqs.epa.gov/data/api/list/states?email=orussell@g.hmc.edu@aqs.api&key=silverwren95')
+
+    #     row = df_08_oz_00.iloc[[0,1,2,3]].copy()
+    #     row['state_number'] = '08'
+    #     row['state_name'] = 'Colorado'
+    #     row['climate_zone'] = 'Southwest'
+    #     df_ozone_2000 = df_ozone_2000.append(row)
+
+CLIMATE_ZONES = {
+    'Washington' : 'Northwest',
+    'Oregon' : 'Northwest',
+    'Idaho' : 'Northwest',
+    'California' : 'West',
+    'Nevada' : 'West',
+    'Utah' : 'Southwest',
+    'Colorado' : 'Southwest',
+    'Arizona' : 'Southwest',
+    'New Mexico' : 'Southwest',
+    'Montana' : 'Northern Rockies and Plains',
+    'North Dakota' : 'Northern Rockies and Plains',
+    'South Dakota' : 'Northern Rockies and Plains',
+    'Wyoming' : 'Northern Rockies and Plains',
+    'Nebraska' : 'Northern Rockies and Plains',
+    'Minnesota' : 'Upper Midwest',
+    'Iowa' : 'Upper Midwest',
+    'Wisconsin' : 'Upper Midwest',
+    'Michigan' : 'Upper Midwest',
+    'Kansas' : 'South',
+    'Oklahoma' : 'South',
+    'Texas' : 'South',
+    'Louisiana' : 'South',
+    'Arkansas' : 'South',
+    'Mississippi' : 'South',
+    'Hawaii' : 'N/A',
+    'Alaska' : 'N/A',
+    'Illinois' : 'Ohio Valley',
+    'Missouri' : 'Ohio Valley',
+    'Tennessee' : 'Ohio Valley',
+    'Kentucky' : 'Ohio Valley',
+    'Ohio' : 'Ohio Valley',
+    'Indiana' : 'Ohio Valley',
+    'West Virginia' : 'Ohio Valley',
+    'Alabama' : 'Southeast',
+    'Georgia' : 'Southeast',
+    'South Carolina' : 'Southeast',
+    'North Carolina' : 'Southeast',
+    'Virginia' : 'Southeast',
+    'District Of Columbia' : 'Southeast',
+    'Florida' : 'Southeast',
+    'Maryland' : 'Northeast',
+    'Pennsylvania' : 'Northeast',
+    'Delaware' : 'Northeast', 
+    'New Jersey' : 'Northeast',
+    'Connecticut' : 'Northeast',
+    'Rhode Island' : 'Northeast',
+    'Massachusetts' : 'Northeast',
+    'Vermont' : 'Northeast',
+    'New Hampshire' : 'Northeast',
+    'New York' : 'Northeast',
+    'Maine' : 'Northeast'
+}
