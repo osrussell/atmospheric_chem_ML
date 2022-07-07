@@ -1,0 +1,15 @@
+,climate_zone,state_code,state_name,site_number,local_site_name,county_code,total_params,Ozone,Carbon monoxide,PM2.5 - Local Conditions,Wind Direction,Solar radiation,Relative Humidity ,Outdoor Temperature,Wind Speed,Nitrogen dioxide (NO2),Barometric pressure,Ultraviolet radiation
+0,West,06,California,0004,Madera-Pump Yard,039,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+1,West,06,California,0006,Sacramento-Del Paso Manor,067,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+2,West,06,California,2002,Simi Valley-Cochran Street,111,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+3,West,06,California,5001,Clovis-Villa,019,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+12,Southeast,11,District Of Columbia,0043,MCMILLAN  NCore-PAMS,001,9,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+13,Ohio Valley,17,Illinois,4201,NORTHBROOK WATER PLANT,031,9,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+14,South,22,Louisiana,0009,Vinton,019,11,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+15,Northeast,25,Massachusetts,0002,TRURO NATIONAL SEASHORE,001,9,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+16,Northeast,25,Massachusetts,0008,WESTOVER AFB,013,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+17,Northeast,25,Massachusetts,4002,QUABBIN RES,015,8,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+18,Northern Rockies and Plains,38,North Dakota,0002,PAINTED CANYON,007,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+20,South,48,Texas,1035,Clinton,201,10,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+21,South,48,Texas,0044,El Paso Chamizal,141,8,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+22,South,48,Texas,0029,Northwest Harris County,201,7,1,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
